@@ -23,7 +23,6 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="IdUsuario" Type="int" Nullable="false" />
     <Property Name="IdGrupo" Type="int" Nullable="false" />
     <Property Name="Titulo" Type="varchar" MaxLength="150" Nullable="false" />
     <Property Name="Descripcion" Type="varchar" MaxLength="500" />
@@ -78,18 +77,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Tarea_Usuario_Id">
-    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
-    <End Role="Tarea" Type="Self.Tarea" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Usuario">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Tarea">
-        <PropertyRef Name="IdUsuario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="GestionDeTareas15ModelStoreContainer">
     <EntitySet Name="Fichero" EntityType="Self.Fichero" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Grupo" EntityType="Self.Grupo" Schema="dbo" store:Type="Tables" />
@@ -105,10 +92,6 @@
     </AssociationSet>
     <AssociationSet Name="FK_Tarea_Grupo_Id" Association="Self.FK_Tarea_Grupo_Id">
       <End Role="Grupo" EntitySet="Grupo" />
-      <End Role="Tarea" EntitySet="Tarea" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Tarea_Usuario_Id" Association="Self.FK_Tarea_Usuario_Id">
-      <End Role="Usuario" EntitySet="Usuario" />
       <End Role="Tarea" EntitySet="Tarea" />
     </AssociationSet>
   </EntityContainer>

@@ -12,7 +12,6 @@ namespace DataModel.ViewModel
     public class TareaModel
     {
         public int Id { get; set; }
-        public int IdUsuario { get; set; }
         public int IdGrupo { get; set; }
         public string Titulo { get; set; }
         public string Descripcion { get; set; }

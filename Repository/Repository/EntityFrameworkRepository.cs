@@ -74,7 +74,9 @@ namespace Repository.Repository
         public virtual int Update(TModel model)
         {
             var data = Adapter.FromViewModel(model);
-            Context.Entry(data).State = EntityState.Modified;
+            
+            //Context.Entry(data).State = EntityState.Modified;
+            Context.Entry(data).CurrentValues.SetValues(data);
             try
             {
                 return Context.SaveChanges();

@@ -21,7 +21,6 @@ namespace Repository.Model
         }
     
         public int Id { get; set; }
-        public int IdUsuario { get; set; }
         public int IdGrupo { get; set; }
         public string Titulo { get; set; }
         public string Descripcion { get; set; }
@@ -32,6 +31,5 @@ namespace Repository.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Fichero> Fichero { get; set; }
         public virtual Grupo Grupo { get; set; }
-        public virtual Usuario Usuario { get; set; }
     }
 }

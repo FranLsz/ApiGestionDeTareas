@@ -25,7 +25,6 @@
       <EntityTypeMapping TypeName="GestionDeTareas15Model.Tarea">
         <MappingFragment StoreEntitySet="Tarea">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
           <ScalarProperty Name="IdGrupo" ColumnName="IdGrupo" />
           <ScalarProperty Name="Titulo" ColumnName="Titulo" />
           <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />

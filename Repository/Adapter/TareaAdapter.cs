@@ -17,7 +17,6 @@ namespace Repository.Adapter
             return new Tarea()
             {
                 Id = model.Id,
-                IdUsuario = model.IdUsuario,
                 IdGrupo = model.IdGrupo,
                 Titulo = model.Titulo,
                 Descripcion = model.Descripcion,
@@ -32,7 +31,6 @@ namespace Repository.Adapter
             return new TareaModel()
             {
                 Id = model.Id,
-                IdUsuario = model.IdUsuario,
                 IdGrupo = model.IdGrupo,
                 Titulo = model.Titulo,
                 Descripcion = model.Descripcion,
