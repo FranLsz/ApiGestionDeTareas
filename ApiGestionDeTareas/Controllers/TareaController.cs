@@ -39,7 +39,7 @@ namespace ApiGestionDeTareas.Controllers
         [ResponseType(typeof(TareaModel))]
         public IHttpActionResult GetByGrupo(int grupoId)
         {
-            var data = TareaRepositorio.Get(o=>o.IdGrupo == grupoId);
+            var data = TareaRepositorio.Get(o => o.IdGrupo == grupoId);
 
             if (data == null)
                 return NotFound();
@@ -60,9 +60,9 @@ namespace ApiGestionDeTareas.Controllers
         [ResponseType(typeof(void))]
         public IHttpActionResult Put(int id, TareaModel model)
         {
-            var d = TareaRepositorio.Get(id);
-            if (d == null || d.Id != model.Id)
-                return NotFound();
+            //var d = TareaRepositorio.Get(id);
+            if (/*d == null ||*/ id != model.Id)
+                return BadRequest();
 
 
             var data = TareaRepositorio.Update(model);

@@ -46,14 +46,12 @@ namespace Repository.Repository
 
         public virtual TModel Get(params object[] keys)
         {
-            var data = DbSet.Find(keys);
-            return Adapter.FromModel(data);
+            return Adapter.FromModel(DbSet.Find(keys));
         }
 
         public virtual ICollection<TModel> Get(Expression<Func<TEntity, bool>> where)
         {
-            var data = DbSet.Where(where);
-            return Adapter.FromModel(data.ToList());
+            return Adapter.FromModel(DbSet.Where(where).ToList());
         }
 
         public virtual TModel Add(TModel model)
@@ -75,8 +73,7 @@ namespace Repository.Repository
         {
             var data = Adapter.FromViewModel(model);
             
-            //Context.Entry(data).State = EntityState.Modified;
-            Context.Entry(data).CurrentValues.SetValues(data);
+            Context.Entry(data).State = EntityState.Modified;
             try
             {
                 return Context.SaveChanges();
