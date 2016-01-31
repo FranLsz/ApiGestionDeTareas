@@ -37,6 +37,16 @@ namespace ApiGestionDeTareas.Controllers
         }
 
         [ResponseType(typeof(GrupoModel))]
+        public IHttpActionResult GetByUsuario(int userId)
+        {
+            var data = GrupoRepositorio.Get(o=>o.IdUsuario == userId);
+
+            if (data == null)
+                return NotFound();
+            return Ok(data);
+        }
+
+        [ResponseType(typeof(GrupoModel))]
         public IHttpActionResult Post(GrupoModel model)
         {
             var data = GrupoRepositorio.Add(model);
