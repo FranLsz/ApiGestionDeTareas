@@ -38,9 +38,9 @@ namespace ApiGestionDeTareas.Controllers
         }
 
         [ResponseType(typeof(UsuarioModel))]
-        public IHttpActionResult GetValido(string username, string password)
+        public IHttpActionResult GetValido(string email, string password)
         {
-            var data = UsuarioRepositorio.Validar(username, password);
+            var data = UsuarioRepositorio.Validar(email, password);
 
             if (data == null)
                 return NotFound();

@@ -1,0 +1,12 @@
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\Repository.dll.config
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\Repository.dll
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\Repository.pdb
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\DataModel.dll
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\EntityFramework.dll
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\DataModel.pdb
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\EntityFramework.xml
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\obj\Release\Repository.csprojResolveAssemblyReference.cache
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\obj\Release\Repository.dll
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\obj\Release\Repository.pdb

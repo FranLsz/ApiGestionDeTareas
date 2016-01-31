@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionDeTareas15Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Fichero">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdTarea" Type="int" Nullable="false" />
+    <Property Name="Tipo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tarea">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+    <Property Name="IdGrupo" Type="int" Nullable="false" />
+    <Property Name="Titulo" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+    <Property Name="Ubicacion" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Avatar" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <Association Name="FK_Fichero_Tarea_Id">
+    <End Role="Tarea" Type="Self.Tarea" Multiplicity="1" />
+    <End Role="Fichero" Type="Self.Fichero" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tarea">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Fichero">
+        <PropertyRef Name="IdTarea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grupo_Usuario_Id">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tarea_Grupo_Id">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="1" />
+    <End Role="Tarea" Type="Self.Tarea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tarea">
+        <PropertyRef Name="IdGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tarea_Usuario_Id">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Tarea" Type="Self.Tarea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tarea">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestionDeTareas15ModelStoreContainer">
+    <EntitySet Name="Fichero" EntityType="Self.Fichero" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tarea" EntityType="Self.Tarea" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Fichero_Tarea_Id" Association="Self.FK_Fichero_Tarea_Id">
+      <End Role="Tarea" EntitySet="Tarea" />
+      <End Role="Fichero" EntitySet="Fichero" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grupo_Usuario_Id" Association="Self.FK_Grupo_Usuario_Id">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tarea_Grupo_Id" Association="Self.FK_Tarea_Grupo_Id">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Tarea" EntitySet="Tarea" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tarea_Usuario_Id" Association="Self.FK_Tarea_Usuario_Id">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Tarea" EntitySet="Tarea" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

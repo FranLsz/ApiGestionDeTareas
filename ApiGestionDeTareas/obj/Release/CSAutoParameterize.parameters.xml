@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="GestionDeTareas15Entities-Web.config Connection String" description="GestionDeTareas15Entities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Model.Model.csdl|res://*/Model.Model.ssdl|res://*/Model.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=nloqupx580.database.windows.net;initial catalog=gestiondetareas15;user id=fran;password=4Tu6ug65;MultipleActiveResultSets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Fran\\Documents\\Visual\ Studio\ 2015\\Projects\\ApiGestionDeTareas\\ApiGestionDeTareas\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GestionDeTareas15Entities']/@connectionString" />
+  </parameter>
+</parameters>

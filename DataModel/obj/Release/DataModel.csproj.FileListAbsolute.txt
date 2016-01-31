@@ -1,0 +1,4 @@
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\DataModel\bin\Release\DataModel.dll
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\DataModel\bin\Release\DataModel.pdb
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\DataModel\obj\Release\DataModel.dll
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\DataModel\obj\Release\DataModel.pdb
