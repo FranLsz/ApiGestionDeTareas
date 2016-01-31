@@ -22,7 +22,8 @@ namespace Repository.Adapter
                 Titulo = model.Titulo,
                 Descripcion = model.Descripcion,
                 Ubicacion = model.Ubicacion,
-                Fecha = model.Fecha
+                Fecha = model.Fecha,
+                Finalizada = model.Finalizada
             };
         }
 
@@ -36,7 +37,8 @@ namespace Repository.Adapter
                 Titulo = model.Titulo,
                 Descripcion = model.Descripcion,
                 Ubicacion = model.Ubicacion,
-                Fecha = model.Fecha
+                Fecha = model.Fecha,
+                Finalizada = model.Finalizada
             };
         }
     }

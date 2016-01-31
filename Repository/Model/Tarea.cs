@@ -27,6 +27,7 @@ namespace Repository.Model
         public string Descripcion { get; set; }
         public string Ubicacion { get; set; }
         public System.DateTime Fecha { get; set; }
+        public bool Finalizada { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Fichero> Fichero { get; set; }

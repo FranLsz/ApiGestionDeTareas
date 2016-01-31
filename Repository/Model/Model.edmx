@@ -34,6 +34,7 @@
           <Property Name="Descripcion" Type="varchar" MaxLength="500" />
           <Property Name="Ubicacion" Type="varchar" MaxLength="500" Nullable="false" />
           <Property Name="Fecha" Type="datetime" Nullable="false" />
+          <Property Name="Finalizada" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="Usuario">
           <Key>
@@ -153,6 +154,7 @@
           <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="Ubicacion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Finalizada" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Fichero" Relationship="Self.FK_Fichero_Tarea_Id" FromRole="Tarea" ToRole="Fichero" />
           <NavigationProperty Name="Grupo" Relationship="Self.FK_Tarea_Grupo_Id" FromRole="Tarea" ToRole="Grupo" />
           <NavigationProperty Name="Usuario" Relationship="Self.FK_Tarea_Usuario_Id" FromRole="Tarea" ToRole="Usuario" />
@@ -276,6 +278,7 @@
                 <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
                 <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
                 <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Finalizada" ColumnName="Finalizada" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

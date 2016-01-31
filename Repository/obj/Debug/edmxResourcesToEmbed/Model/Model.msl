@@ -31,6 +31,7 @@
           <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
           <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
           <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Finalizada" ColumnName="Finalizada" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

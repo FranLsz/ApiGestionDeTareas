@@ -18,5 +18,6 @@ namespace DataModel.ViewModel
         public string Descripcion { get; set; }
         public string Ubicacion { get; set; }
         public System.DateTime Fecha { get; set; }
+        public bool Finalizada { get; set; }
     }
 }

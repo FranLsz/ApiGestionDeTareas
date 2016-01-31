@@ -29,6 +29,7 @@
     <Property Name="Descripcion" Type="varchar" MaxLength="500" />
     <Property Name="Ubicacion" Type="varchar" MaxLength="500" Nullable="false" />
     <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Finalizada" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="Usuario">
     <Key>
