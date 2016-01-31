@@ -16,6 +16,7 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IdUsuario" Type="int" Nullable="false" />
     <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Imagen" Type="varchar" MaxLength="500" />
   </EntityType>
   <EntityType Name="Tarea">
     <Key>

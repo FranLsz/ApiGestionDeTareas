@@ -17,6 +17,7 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

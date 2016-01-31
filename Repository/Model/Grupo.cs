@@ -23,6 +23,7 @@ namespace Repository.Model
         public int Id { get; set; }
         public int IdUsuario { get; set; }
         public string Nombre { get; set; }
+        public string Imagen { get; set; }
     
         public virtual Usuario Usuario { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

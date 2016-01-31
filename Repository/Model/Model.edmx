@@ -21,6 +21,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IdUsuario" Type="int" Nullable="false" />
           <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Imagen" Type="varchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="Tarea">
           <Key>
@@ -137,6 +138,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IdUsuario" Type="Int32" Nullable="false" />
           <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Imagen" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Usuario" Relationship="Self.FK_Grupo_Usuario_Id" FromRole="Grupo" ToRole="Usuario" />
           <NavigationProperty Name="Tarea" Relationship="Self.FK_Tarea_Grupo_Id" FromRole="Grupo" ToRole="Tarea" />
         </EntityType>
@@ -260,6 +262,7 @@
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

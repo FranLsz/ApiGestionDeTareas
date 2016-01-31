@@ -18,7 +18,8 @@ namespace Repository.Adapter
             {
                 Id = model.Id,
                 IdUsuario = model.IdUsuario,
-                Nombre = model.Nombre
+                Nombre = model.Nombre,
+                Imagen = model.Imagen
             };
         }
 
@@ -28,7 +29,8 @@ namespace Repository.Adapter
             {
                 Id = model.Id,
                 IdUsuario = model.IdUsuario,
-                Nombre = model.Nombre
+                Nombre = model.Nombre,
+                Imagen = model.Imagen
             };
         }
     }

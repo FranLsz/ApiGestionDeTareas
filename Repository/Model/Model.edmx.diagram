@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e216828460d041cebe729e3d1bb422d1" Name="Diagram1">
+      <Diagram DiagramId="9e07c98c6cbd4759a975e043a2370395" Name="Diagram1">
         <EntityTypeShape EntityType="GestionDeTareas15Model.Fichero" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="GestionDeTareas15Model.Grupo" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestionDeTareas15Model.Grupo" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="GestionDeTareas15Model.Tarea" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="GestionDeTareas15Model.Usuario" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <AssociationConnector Association="GestionDeTareas15Model.FK_Fichero_Tarea_Id" ManuallyRouted="false" />
