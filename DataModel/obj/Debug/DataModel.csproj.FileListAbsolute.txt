@@ -3,3 +3,7 @@ C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\DataModel
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\DataModel\obj\Debug\DataModel.dll
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\DataModel\obj\Debug\DataModel.pdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\DataModel\bin\Debug\DataModel.dll
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\DataModel\bin\Debug\DataModel.pdb
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\DataModel\obj\Debug\DataModel.dll
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\DataModel\obj\Debug\DataModel.pdb

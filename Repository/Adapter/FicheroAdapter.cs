@@ -17,8 +17,8 @@ namespace Repository.Adapter
             return new Fichero()
             {
                 Id = model.Id,
-                IdTarea = model.IdTarea,
-                Tipo = model.Tipo,
+                //IdTarea = model.IdTarea,
+                //Tipo = model.Tipo,
                 Nombre = model.Nombre
             };
         }
@@ -28,8 +28,8 @@ namespace Repository.Adapter
             return new FicheroModel()
             {
                 Id = model.Id,
-                IdTarea = model.IdTarea,
-                Tipo = model.Tipo,
+                //IdTarea = model.IdTarea,
+                //Tipo = model.Tipo,
                 Nombre = model.Nombre
             };
         }

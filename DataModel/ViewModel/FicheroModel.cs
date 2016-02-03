@@ -12,8 +12,8 @@ namespace DataModel.ViewModel
     public class FicheroModel
     {
         public int Id { get; set; }
-        public int IdTarea { get; set; }
-        public string Tipo { get; set; }
+        //public int IdTarea { get; set; }
+        //public string Tipo { get; set; }
         public string Nombre { get; set; }
     }
 }

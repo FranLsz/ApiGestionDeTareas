@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using ApiGestionDeTareas.Repository;
+using ApiGestionDeTareas.Utils;
 using DataModel.ViewModel;
 using Microsoft.Practices.Unity;
 
@@ -39,12 +41,25 @@ namespace ApiGestionDeTareas.Controllers
         [ResponseType(typeof(FicheroModel))]
         public IHttpActionResult Post(FicheroModel model)
         {
-            var data = FicheroRepositorio.Add(model);
+            /*var data = FicheroRepositorio.Add(model);
 
             if (data == null)
                 return BadRequest();
 
-            return Ok(data);
+            return Ok(data);*/
+
+
+            var cuenta = ConfigurationManager.AppSettings["cuenta"];
+            var clave =
+            ConfigurationManager.AppSettings["clave"];
+            var contenedor = ConfigurationManager.AppSettings["contenedor"];
+
+            var sto = new AzureStorageUtils(cuenta, clave, contenedor);
+            var nombre = Guid.NewGuid() + ".png";
+
+            sto.SubirFichero(Convert.FromBase64String(model.Nombre), nombre);
+
+            return Ok(nombre);
         }
 
         [ResponseType(typeof(void))]

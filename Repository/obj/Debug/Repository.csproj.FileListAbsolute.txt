@@ -10,3 +10,15 @@ C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repositor
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\obj\Debug\Repository.dll
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ApiGestionDeTareas\Repository\obj\Debug\Repository.pdb
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\Repository.dll.config
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\Repository.dll
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\Repository.pdb
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\DataModel.dll
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\EntityFramework.dll
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\DataModel.pdb
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\EntityFramework.xml
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\obj\Debug\Repository.dll
+C:\Users\Alumno\Documents\GitRepos\ApiGestionDeTareas\Repository\obj\Debug\Repository.pdb
